@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zero Treasure - Trading Courses</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('https://sdmntpreastus.oaiusercontent.com/files/00000000-1f7c-61f9-9cb1-88cc845c3a87/raw?se=2025-06-05T03%3A33%3A35Z&sp=r&sv=2024-08-04&sr=b&scid=12cc85fd-e994-55d3-8136-f0e6061a9ad4&skoid=9ccea605-1409-4478-82eb-9c83b25dc1b0&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-06-04T17%3A27%3A55Z&ske=2025-06-05T17%3A27%3A55Z&sks=b&skv=2024-08-04&sig=BZ8an/6cWkSnfKlcsaP6abRFBql3K2fWk19CGrUwS7k%3D') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.85);
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header img {
+      height: 50px;
+    }
+
+    nav a {
+      color: #00ffd5;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .bg-controls {
+      text-align: center;
+      padding: 1rem;
+      background-color: rgba(0,0,0,0.7);
+    }
+
+    .bg-controls button {
+      margin: 0.3rem;
+      padding: 0.4rem 0.8rem;
+      background-color: #00ffd5;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 3rem 1rem;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+    }
+
+    .section {
+      padding: 2rem 1rem;
+      background-color: rgba(0, 0, 0, 0.85);
+    }
+
+    .section h2 {
+      text-align: center;
+      color: #00ffd5;
+      margin-bottom: 1rem;
+    }
+
+    .videos-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      padding: 0 2rem;
+    }
+
+    iframe {
+      width: 100%;
+      height: 200px;
+      border-radius: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: rgba(0, 0, 0, 0.8);
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+
+    .playlist-link {
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    .playlist-link a {
+      background-color: #00ffd5;
+      color: #000;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+      iframe {
+        height: 180px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="https://yt3.googleusercontent.com/Unmx8BE3rDxPmbW7BNcwx6enUx8xbVnAqI84uyUTQP-Gec6rOQiw1so0A4DdSj2LblbSN-Ug9A=s160-c-k-c0x00ffffff-no-rj" alt="Zero Treasure Logo">
+    <nav>
+      <a href="#">Home</a>
+      <a href="#courses">Courses</a>
+      <a href="#videos">Videos</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="bg-controls">
+    <span style="color:#00ffd5; font-weight:bold;">Choose Background: </span>
+    <button onclick="changeBackground('bg1')">Chart</button>
+    <button onclick="changeBackground('bg2')">Dark</button>
+    <button onclick="changeBackground('bg3')">Abstract</button>
+  </div>
+
+  <section class="hero">
+    <h1>Welcome to Zero Treasure</h1>
+    <p>Master Binary Trading, Price Action & Real Knowledge</p>
+  </section>
+
+  <section id="courses" class="section">
+    <h2>Premium Courses</h2>
+    <p style="text-align:center">(All course playlists & upcoming trainings will be listed here)</p>
+
+    <div class="playlist-link">
+      <a href="https://www.youtube.com/watch?v=oZljvoe1cO0&list=PLx8GPKAFzeW2AvmVYFXFt4w4PiHB8zqF2" target="_blank">🎓 View Course Playlist</a>
+    </div>
+  </section>
+
+  <section id="videos" class="section">
+    <h2>Latest Videos</h2>
+    <div class="videos-container">
+      <iframe src="https://www.youtube.com/embed/uZwVexcirMU" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/w5J3_qOb9jE" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/zEoU9hdG6CE" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Zero Treasure. All rights reserved.
+  </footer>
+
+  <script>
+    function changeBackground(type) {
+      let url = "";
+
+      if (type === "bg1") {
+        url = "https://media.istockphoto.com/id/1315193317/vector/stock-market-candlestick-chart-vector-background.jpg?s=612x612&w=0&k=20&c=SexH-fDr_9Y9UAhJJ75QP2h_yFRWIpkJO5k26bNNZYs=";
+      } else if (type === "bg2") {
+        url = "https://sdmntpreastus.oaiusercontent.com/files/00000000-1f7c-61f9-9cb1-88cc845c3a87/raw?se=2025-06-05T03%3A33%3A35Z&sp=r&sv=2024-08-04&sr=b&scid=12cc85fd-e994-55d3-8136-f0e6061a9ad4&skoid=9ccea605-1409-4478-82eb-9c83b25dc1b0&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-06-04T17%3A27%3A55Z&ske=2025-06-05T17%3A27%3A55Z&sks=b&skv=2024-08-04&sig=BZ8an/6cWkSnfKlcsaP6abRFBql3K2fWk19CGrUwS7k%3D";
+      } else if (type === "bg3") {
+        url = "https://img.freepik.com/free-vector/gradient-stock-market-concept_23-2149166910.jpg";
+      }
+
+      document.body.style.backgroundImage = `url('${url}')`;
+      document.body.style.backgroundSize = "cover";
+      document.body.style.backgroundAttachment = "fixed";
+    }
+  </script>
+</body>
+</html>
